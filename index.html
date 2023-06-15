@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="index.js"> -->
+    <title>Temperature Converter</title>
+</head>
+
+
+<body>
+
+ 
+<div class="wrapper">
+  <div class="container">
+    <div class="nav">
+      
+      <div class="heading">
+        <h1>CONVERT TEMPERATURE</h1>
+      </div>
+    </div>
+    <div class="main">
+      <div class="form">
+        <h2>Enter Temperature</h2>
+        <input type="number" placeholder="Enter Temperature" id="input" />
+
+        <select name="degree" id="degree">
+          <option value="">Choose Unit</option>
+          <option value="Fahrenheit">Fahrenheit</option>
+          <option value="Celcius">Celcius</option>
+        </select>
+
+        <div class="button">
+          <input
+            type="button"
+            id="button"
+            onclick="convert();"
+            value="Convert"
+          />
+        </div>
+        <h2>Result</h2>
+        <input type="text" placeholder="Converted" id="output" readonly />
+      </div>
+    </div>
+  </div>
+</div>
+<script src="index.js"></script>
+
+</body>
+</html>
